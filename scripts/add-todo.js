@@ -5,8 +5,8 @@ let todoItemHTML = '';
 const todoInput = document.querySelector('.js-name-todo');
 const dateDue = document.querySelector('.js-date-input');
 const commentText = document.querySelector('.js-comment-text');
-const addBtn = document.querySelector('.js-add-btn');
-const removeBtn = document.querySelector('.remove-todo');
+let addBtn = document.querySelector('.js-add-btn');
+let removeBtn = document.querySelectorAll('.remove-todo');
 
 // getFromStorage();
 // document.addEventListener('DOMContentLoaded', getFromStorage()); 
@@ -33,25 +33,30 @@ function addTodo() {
     ('todo-item-container');
   todoItemHTML = '';
 
-  todoList.forEach((todo) => {
+  todoList.forEach((todo, index) => {
     todoItemHTML += `
       <div class="todo-item">
             <h1>${todo.name}</h1>
             <span>Due: </span><span>${todo.dueDate}</span>
             <p>Comments: </p><span>${todo.comments}</span>
-            <button class="remove-todo">Remove</button>
+            <button class="remove-todo" onclick="todoList.splice(${index}, 1); addTodo();">Remove</button>
           </div>
     `;
   });
   todoContainer.innerHTML = todoItemHTML;
+  
 };
-removeBtn.addEventListener("click", () => {
-  todoList.forEach((todo) => {
-    console.log(todo);
-    todoList.splice(todo, 0)
-    })
-})
 
+// function removeTodo() {
+//    removeBtn.addEventListener("click", () => {
+//     todoList.forEach((todo, index) => {
+//     console.log(todo);
+//     todoList.splice(index, 1);
+//     addTodo();
+//   })
+// });
+// };
+// removeTodo();
 function addToLocalStorage() {
   localStorage.setItem("todoList", JSON.stringify(todoList));
 };
