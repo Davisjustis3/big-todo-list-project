@@ -1,0 +1,20 @@
+@media screen and (min-width: 950px) {
+  #main {
+    margin-left: 8%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #todo-list-container-create {
+    max-width: 665px
+  }
+}
+@media screen and (max-width: 850px) {
+  #todo-list-container-create {
+    max-width: 440px
+  }
+}
+@media screen and (max-width: 580px) {
+  #todo-list-container-create {
+    max-width: 215px
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles/media-queries.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Selim Todo Organizer</title>
+</head>
+<body>
+  <div id="todo-nav-container">
+    <h1><a class="selim-title" href="home-page.html">Selim</a></h1>
+    <div id="todo-options-container">
+      <div class="todo-boxes"><a class="nav-links" href="home-page.html">Home</a></div>
+      <div class="todo-boxes create-new"><a class="nav-links" href="create-new.html">Create New</a></div>
+      <div class="todo-boxes my-tasks"><a class="nav-links" href="my-tasks.html">My Tasks</a></div>
+      <div class="todo-boxes today-tasks"><a class="nav-links" href="">Today</a></div>
+      <div class="todo-boxes upcoming-tasks"><a class="nav-links" href="">Upcoming</a></div>
+    </div>
+  </div>
+    <section id="main">
+      <h3><a class="home-link" href="home-page.html">Home</h3></a>
+      <h1 id="create-new-todo-title">Create a new todo here</h1>
+      <div id="create-todo-container">
+        <div id="todo-form">
+            <h2>New todo</h2>
+            <div id="input-container">
+              <h3>Task Name:</h3>
+            <input type="text" name="name" class="name-todo js-name-todo" placeholder="Name of task">
+            <h3>Due Date:</h3>
+            <input type="date" class="due-date-input js-date-input">
+            <h3>Comments</h3>
+            <textarea name="text" class="comment-input js-comment-text" placeholder="Comments"></textarea>
+            </div>
+            <button class="add-task js-add-btn">Add task</button>
+        </div>
+      </div>
+      <h1 id="your-projects-title-create">Your Projects</h1>
+     <div id="todo-list-container-create">
+        <div id="todo-item-container">
+        </div>
+      </div>
+    </section>
+    <script src="scripts/add-todo.js"></script>
+</body>
+</html>

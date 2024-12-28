@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  font-family: 'Poppins', serif;
+  overflow-x: hidden; 
+  background: rgba(20, 40, 50, .7);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#todo-nav-container {
+  width: 15%;
+  max-width: 150px;
+  height: 100vh;
+  background-color: #4C585B;
+  position: fixed;
+}
+.selim-title {
+  color: #F2E8C6;
+}
+#todo-nav-container > h1 {
+  margin-left: 10px;
+  font-size: 36px;
+}
+#todo-options-container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.todo-boxes {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  cursor: pointer;
+}
+.todo-boxes:hover {
+  background-color: beige;
+  transition: all 300ms;
+}
+.nav-links {
+  font-size: 20px;
+  text-decoration: none;
+  color: #F2E8C6;
+}
+.nav-links:hover {
+  color: rgb(100,100,100);
+  transition: all 300ms;
+}
+.home-link {
+  color: #F2E8C6;
+  margin-left: 20%;
+}
+#image-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-image: url(images/ian-dooley-DJ7bWa-Gwks-unsplash.jpg);
+  background-size: cover;
+  background-position-x: center;
+  filter: blur(3px);
+  z-index: -1;
+}
+#main {
+  margin-left: 15%;
+}
+#home {
+  margin-left: 15%;
+}
+#home,
+#main {
+  width: 100%;
+  max-width: 1550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#home > h1 {
+  margin-top: 200px;
+  font-size: 60px;
+  margin-bottom: 0;
+  color: #F4EDD3;
+  border-radius: 10px;
+}
+#home > h3 {
+  color: #F4EDD3;
+  border-radius: 10px;
+}
+#main > h3 {
+  position: absolute;
+  left: 175px;
+}
+#your-projects-header > p {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+#your-projects-header {
+  text-align: center;
+  margin: 100px 0 0 5%;
+  color: #F2E8C6;
+  font-size: 1.4rem;
+}
+.start-project {
+  border: none;
+  border-radius: 30px;
+  margin-top: 50px;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+  background: rgb(200,130,120);
+  color: white;
+  font-size: 20px;
+}
+#todo-list-container-create {
+  max-width: 890px;
+}
+#todo-list-container,
+#todo-list-container-create {
+  background-color: #4C585B;
+  display: flex;
+  justify-content: center;
+  border: 5px #4C585B solid;
+  border-radius: 25px;
+  padding: 25px 0 25px 0;
+  margin-left: 5%;
+}
+#todo-item-container,
+#todo-item-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.todo-item {
+  background: #7E99A3;
+  border-radius: 10px;
+  width: 205px;
+  height: 150px;
+  font-size: 10px;
+  padding: 0 0 0 10px;
+  color: #F4EDD3;
+  line-height: 12px;
+  overflow-y: scroll; 
+}
+#create-new-todo-title {
+  font-size: 46px;
+  margin: 100px 0 50px 5%;
+  color: #F2E8C6;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+#create-todo-container {
+  width: 70%;
+  height: 700px;
+  max-width: 700px;
+  background-color: #4C585B;
+  border: 6px #F2E8C6 solid;
+  border-radius: 20px;
+  color: #F2E8C6;
+  margin: 0 0 100px 5%;
+}
+#todo-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#todo-form > h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+#input-container > h3 {
+  font-size: 1.3rem;
+}
+.name-todo,
+.due-date-input,
+.comment-input {
+  border: 2px #F2E8C6 solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  background: #4C585B;
+  color: #F2E8C6;
+}
+.name-todo,
+.due-date-input {
+ height: 40px;
+}
+.name-todo,
+.comment-input {
+  width: 50vw;
+  max-width: 600px;
+}
+.comment-input {
+  height: 150px;
+  margin-bottom: 25px
+}
+.add-task {
+  border-radius: 10px;
+  border: 2px #F2E8C6 solid;
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  color: #F2E8C6;
+  background: rgb(170, 120, 0);
+}
+textarea {
+  padding-top: 15px;
+  vertical-align: top;
+  font-size: 18px;
+}
+#your-projects-title-create {
+  margin-left: 5%;
+  color: #F2E8C6;
+}
+
+
+
+
+
+
