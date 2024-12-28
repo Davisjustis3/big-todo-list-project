@@ -134,6 +134,21 @@ a {
   flex-wrap: wrap;
   gap: 10px;
 }
+.remove-todo {
+  border-radius: 10px;
+  border: .5px #F2E8C6 solid;
+  cursor: pointer;
+  height: 20px;
+  width: 40px;
+  color: #F2E8C6;
+  background: rgb(100, 60, 0);
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+.todo-item > h1 {
+  width: 50%;
+}
 .todo-item {
   background: #7E99A3;
   border-radius: 10px;

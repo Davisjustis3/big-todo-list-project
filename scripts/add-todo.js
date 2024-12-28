@@ -6,6 +6,7 @@ const todoInput = document.querySelector('.js-name-todo');
 const dateDue = document.querySelector('.js-date-input');
 const commentText = document.querySelector('.js-comment-text');
 const addBtn = document.querySelector('.js-add-btn');
+const removeBtn = document.querySelector('.remove-todo');
 
 // getFromStorage();
 // document.addEventListener('DOMContentLoaded', getFromStorage()); 
@@ -38,15 +39,21 @@ function addTodo() {
             <h1>${todo.name}</h1>
             <span>Due: </span><span>${todo.dueDate}</span>
             <p>Comments: </p><span>${todo.comments}</span>
+            <button class="remove-todo">Remove</button>
           </div>
     `;
-    
   });
   todoContainer.innerHTML = todoItemHTML;
 };
+removeBtn.addEventListener("click", () => {
+  todoList.forEach((todo) => {
+    console.log(todo);
+    todoList.splice(todo, 0)
+    })
+})
 
-function addToLocalStorage(todo) {
-  localStorage.setItem("todoList", JSON.stringify(todo));
+function addToLocalStorage() {
+  localStorage.setItem("todoList", JSON.stringify(todoList));
 };
 function getFromStorage() {
   const storedTodos = JSON.parse(localStorage.getItem("todoList"));
