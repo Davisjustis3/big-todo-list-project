@@ -147,7 +147,7 @@ a {
 }
 
 .todo-item > h1 {
-  width: 50%;
+  line-height: 25px;
 }
 .todo-item {
   background: #7E99A3;

@@ -8,8 +8,6 @@ const commentText = document.querySelector('.js-comment-text');
 let addBtn = document.querySelector('.js-add-btn');
 let removeBtn = document.querySelectorAll('.remove-todo');
 
-// getFromStorage();
-// document.addEventListener('DOMContentLoaded', getFromStorage()); 
 
 addBtn.addEventListener("click", function () {
   todoList.push({
