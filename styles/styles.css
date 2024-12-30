@@ -134,16 +134,24 @@ a {
   flex-wrap: wrap;
   gap: 10px;
 }
+#button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.edit-todo {
+ font-size: 1.2rem;
+ background: none;
+ border: none;
+}
 .remove-todo {
-  border-radius: 10px;
-  border: .5px #F2E8C6 solid;
+  background: rgb(100,20,20);
+  border: none;
   cursor: pointer;
   height: 20px;
-  width: 40px;
+  width: 20px;
   color: #F2E8C6;
-  background: rgb(100, 60, 0);
-  font-size: 8px;
-  margin-top: 10px;
+  font-size: 10px;
 }
 
 .todo-item > h1 {
@@ -226,7 +234,7 @@ textarea {
   vertical-align: top;
   font-size: 18px;
 }
-#your-projects-title-create {
+.your-projects-title-create {
   margin-left: 5%;
   color: #F2E8C6;
 }
