@@ -94,7 +94,7 @@ a {
   position: absolute;
   left: 175px;
 }
-#your-projects-header > p {
+.today-date {
   text-decoration: underline;
   text-underline-offset: 7px;
 }

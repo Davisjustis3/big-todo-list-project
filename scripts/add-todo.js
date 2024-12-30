@@ -1,7 +1,6 @@
+
 let todoList = [];
 let todoItemHTML = '';
-
-
 const todoInput = document.querySelector('.js-name-todo');
 const dateDue = document.querySelector('.js-date-input');
 const commentText = document.querySelector('.js-comment-text');
@@ -9,7 +8,7 @@ let addBtn = document.querySelector('.js-add-btn');
 let removeBtn = document.querySelectorAll('.remove-todo');
 
 
-addBtn.addEventListener("click", function () {
+addBtn.addEventListener("click", function (){
   todoList.push({
     name: todoInput.value,
     dueDate: dateDue.value,
@@ -17,7 +16,6 @@ addBtn.addEventListener("click", function () {
   });
     
   addTodo();
-  addToLocalStorage();
 
   todoInput.value = '';
   dateDue.value = '';
@@ -26,7 +24,7 @@ addBtn.addEventListener("click", function () {
 }
 );
 
-function addTodo() {
+function addTodo(){
   let todoContainer = document.getElementById
     ('todo-item-container');
   todoItemHTML = '';
@@ -44,26 +42,14 @@ function addTodo() {
   todoContainer.innerHTML = todoItemHTML;
   
 };
-
-// function removeTodo() {
-//    removeBtn.addEventListener("click", () => {
-//     todoList.forEach((todo, index) => {
-//     console.log(todo);
-//     todoList.splice(index, 1);
-//     addTodo();
-//   })
-// });
-// };
-// removeTodo();
-function addToLocalStorage() {
-  localStorage.setItem("todoList", JSON.stringify(todoList));
-};
-function getFromStorage() {
-  const storedTodos = JSON.parse(localStorage.getItem("todoList"));
-
-  if (storedTodos) {
-    todoList = storedTodos;
-  };
-};
-console.log(todoList);
+console.log(document.querySelector('#todays-date-container').innerHTML);
+// function displayTodaysDate() {
+//   let date = new Date();
+//   date = date.toString().split(" ");
+//   document.querySelector('.js-today-date').innerHTML = 10;
+//   console.log(date);
+// }
+// window.onload = function (){
+//   displayTodaysDate();
+// }
 
