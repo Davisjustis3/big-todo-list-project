@@ -1,4 +1,4 @@
-import { todoList } from '../scripts/create-new.js';
+// import { todoList } from '../scripts/create-new.js';
 
 
 console.log(document.querySelector('.js-today-date').innerHTML);

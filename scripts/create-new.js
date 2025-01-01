@@ -56,6 +56,7 @@ function addTodo() {
   activateDeleteListeners();
 };
 addTodo();
+// reference for learning to do remove buttons https://youtu.be/SeKQSQDUMDQ?si=izR-w6yIRFMvsHH2
 function activateDeleteListeners() {
   let removeBtn = document.querySelectorAll('.remove-todo');
   removeBtn.forEach((deleteB, i) => {
